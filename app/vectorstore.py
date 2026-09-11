@@ -12,6 +12,7 @@ def get_vectorstore() -> Chroma:
         collection_name=COLLECTION_NAME,
         embedding_function=get_embeddings(),
         persist_directory=str(CHROMA_DIR),
+        collection_metadata={"hnsw:space": "cosine"}
     )
 
 if __name__ == "__main__":

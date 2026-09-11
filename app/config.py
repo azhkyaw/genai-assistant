@@ -14,3 +14,5 @@ MODELS = {
     "anthropic": "anthropic:claude-haiku-4-5",
     "gemini": "google_genai:gemini-3.5-flash-lite"
 }
+
+MIN_RELEVANCE_SCORE = 0.0
